@@ -6,6 +6,7 @@ import pandas as pd
 from langdetect import detect, DetectorFactory
 from sklearn.feature_extraction.text import TfidfVectorizer
 import spacy
+import numpy as np
 
 DetectorFactory.seed = 0  # for reproducible language detection
 def chinese_tokenize(text: str, cut_all=False, HMM=True):
@@ -35,22 +36,22 @@ EN_PRONOUNS_POS = {"PRP", "PRP$"}
 
 CHINESE_PRONOUNS = {
     # ────────────── 1st person ──────────────
-    "我", "俺", "吾", "在下", "本座", "老子", "大爷", "小的", "臣", "朕", "孤", "寡人",
-    "人家", "人家自己", "自己", "俺们", "咱们", "我们", "我們",
+    "我", "俺", "吾", "在下", "本座", "老子", "大爷", "大爺", "小的", "臣", "朕", "孤", "寡人",
+    "人家", "人家自己", "自己", "俺们", "俺們", "咱们", "咱們", "我们", "我們",
 
     # ────────────── 2nd person ──────────────
-    "你", "妳", "您", "爾", "汝", "乃", "閣下", "大人", "閣下", "兄台", "道友",
-    "你们", "你們", "諸位", "各位", "大家",
+    "你", "妳", "您", "尔", "爾", "汝", "乃", "阁下", "閣下", "大人", "兄台", "道友",
+    "你们", "你們", "诸位", "諸位", "各位", "大家",
 
     # ────────────── 3rd person ──────────────
-    "他", "她", "它", "牠", "祂", "牠", "伊", "彼", "其", "之", "這位", "那位",
-    "他们", "他們", "她们", "她們", "它们", "它們", "牠們",
+    "他", "她", "它", "牠", "祂", "伊", "彼", "其", "之", "这位", "這位", "那位", "那位",
+    "他们", "他們", "她们", "她們", "它们", "它們", "牠们", "牠們",
 
     # ────────────── Reflexive / reciprocal ──────────────
     "自己", "彼此", "互相", "各自", "自家",
 
     # ────────────── Indefinite / generic ──────────────
-    "别人", "別人", "人家", "有人", "某些人", "大家", "大夥", "大伙儿"
+    "别人", "別人", "人家", "有人", "某些人", "大家", "大夥", "大伙", "大伙儿", "大伙兒"
 }
 
 
@@ -284,7 +285,7 @@ def add_tfidf_features(df, base_path):
     
     try:
         X = vectorizer.fit_transform(corpus)
-        tfidf_avg = X.mean(axis=1).A1  # average TF-IDF per document
+        tfidf_avg = X.mean(axis=1)
         df.loc[book_indices, "tfidf_avg"] = tfidf_avg
     except:
         df["tfidf_avg"] = 0.0  # fallback if all empty
@@ -292,3 +293,54 @@ def add_tfidf_features(df, base_path):
     return df
 
 #test 
+
+def debug_tfidf_features(df, base_path):
+    """
+    Computes TF-IDF separately per language, then combines.
+    This gives fair and meaningful scores for both English and Chinese.
+    """
+    corpus = []
+    book_indices = []  # to keep order
+    judge = False
+    for idx, row in df.iterrows():
+        genre_path = os.path.join(base_path, row["genre"])
+        filepath = os.path.join(genre_path, row["book"])
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                raw_text = f.read()
+                
+            # Clean and prepare text
+            text = clean_text(raw_text)
+            
+            if row["language"] == "ch":
+                # Chinese: use jieba tokenizer
+                text = " ".join(chinese_tokenize(text))
+            else:
+                # English: use default whitespace tokenizer (good enough)
+                text = text.lower()
+                
+            corpus.append(text)
+            book_indices.append(idx)
+        except:
+            corpus.append("")
+            book_indices.append(idx)
+
+    # Now use a single vectorizer but with language-aware preprocessing already done
+    vectorizer = TfidfVectorizer(
+        max_features=5000,
+        min_df=2,           # appear in at least 2 books
+        max_df=0.95,        # ignore terms in >95% of books
+        ngram_range=(1,2),  # include bigrams for richer features
+        norm='l2'
+    )
+    
+    try:
+        X = vectorizer.fit_transform(corpus)
+        non_zero_counts = X.getnnz(axis=1)
+        tfidf_avg = np.array(X.sum(axis=1)).flatten() / non_zero_counts
+        df.loc[book_indices, "tfidf_avg"] = tfidf_avg
+    except:
+        df["tfidf_avg"] = 0.0  # fallback if all empty
+        judge = True
+
+    return judge
