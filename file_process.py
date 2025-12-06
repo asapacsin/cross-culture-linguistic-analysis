@@ -69,6 +69,40 @@ def safe_read_text(filepath):
     print(f"Failed to decode (tried all encodings): {filepath}")
     return None
 
+def clean_df(df, verbose=True):
+    initial = len(df)
+    
+    # 1. Remove only real garbage (NaN / inf / empty)
+    df = df.replace([np.inf, -np.inf], np.nan)
+    df = df.dropna(subset=["pronoun_ratio", "info_density", 
+                           "avg_sent_len","total_words"])
+    
+    # 2. Minimum realistic book size (skip samples/chapters)
+    df = df[df["total_words"] >= 10_000]   # ← 10k words minimum (very safe)
+    
+    # 3. VERY LOOSE outlier removal — use 5×IQR or percentile clipping
+    numeric_cols = ["pronoun_ratio", "info_density", "avg_sent_len"]
+    
+    for col in numeric_cols:
+        # For all ratios: winsorize at 1% and 99% (keeps real variation)
+        lower = df[col].quantile(0.001)
+        upper = df[col].quantile(0.999)
+        removed = len(df[(df[col] < lower) | (df[col] > upper)])
+        df = df[df[col].between(lower, upper)]
+        
+        if verbose and removed > 0:
+            print(f"  Removed {removed} extreme values in {col}")
+    
+    
+    final = len(df)
+    if verbose:
+        print(f"\nData cleaning complete:")
+        print(f"   Before → {initial} books")
+        print(f"   After  → {final} books ({initial-final} removed)")
+        print(f"   Kept {100*final/initial:.1f}% of the data\n")
+    
+    return df.reset_index(drop=True)
+
 def analyze_book(text, lang="en"):
     text = clean_text(text)
 
@@ -241,7 +275,10 @@ def process_genre_folder(base_path,lang="en"):
                 print(f"  Analysis failed: {filename} | Error: {e}")
 
     print(f"\nFinished! Successfully processed {success}/{total_files} files.")
-    return pd.DataFrame(results)
+    df = pd.DataFrame(results)
+    df = clean_df(df)
+    df = add_tfidf_features(df, base_path)
+    return df
 
 def add_tfidf_features(df, base_path):
     """

@@ -1,0 +1,80 @@
+pronoun_ratio,info_density,avg_sent_len,language,total_words,book,genre,filepath
+0.0529924974629439,0.5712875064019826,25.93217368634494,ch,1790461,5. 步步生莲 (月关) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/5. 步步生莲 (月关) (Z-Library).txt
+0.04391603754074292,0.5701085851118924,14.496847008684664,ch,1170142,3. 隋乱 (酒徒) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/3. 隋乱 (酒徒) (Z-Library).txt
+0.04465691867261159,0.5803299572329509,16.97362480693834,ch,142867,2. 风起陇西 (马伯庸 [马伯庸]) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/2. 风起陇西 (马伯庸 [马伯庸]) (Z-Library).txt
+0.036853381568303915,0.5821553621707578,18.07117607918157,ch,1738158,4. 新宋 (阿越) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/4. 新宋 (阿越) (Z-Library).txt
+0.03382507682766214,0.6095970119091587,15.37916622012646,ch,143503,10. 历史的裂变：中国历史上的十三场政变（畅销书《大唐兴亡三百年》作者王觉仁力作，用小说笔法，讲述中华五千年历史上的13场知名政变，聚焦那些_. (Z-Library).txt,history_fiction,../data/chinese/history_fiction/10. 历史的裂变：中国历史上的十三场政变（畅销书《大唐兴亡三百年》作者王觉仁力作，用小说笔法，讲述中华五千年历史上的13场知名政变，聚焦那些_. (Z-Library).txt
+0.0241616378555671,0.6362914803963909,21.29579915485956,ch,85673,9. 辛亥：计划外革命 (雪珥) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/9. 辛亥：计划外革命 (雪珥) (Z-Library).txt
+0.023188070953321687,0.5621638530571557,15.471439702468452,ch,3852110,6. 宰执天下 (cuslaa) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/6. 宰执天下 (cuslaa) (Z-Library).txt
+0.06411552443245343,0.49685012485689994,27.836563548266867,ch,149371,8. 四时歌：骑桶人自选集 (骑桶人) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/8. 四时歌：骑桶人自选集 (骑桶人) (Z-Library).txt
+0.03601113130523896,0.5687383577078344,19.960332259705034,ch,706476,7. 窃明 (灰熊猫) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/7. 窃明 (灰熊猫) (Z-Library).txt
+0.038350256693185314,0.5855636931811004,14.091572700296735,ch,237443,1. 长安十二时辰 (马伯庸) (Z-Library).txt,history_fiction,../data/chinese/history_fiction/1. 长安十二时辰 (马伯庸) (Z-Library).txt
+0.08915556297789601,0.5078312318831936,12.020504731861198,ch,83831,5. 奇门遁甲 (周德东) (Z-Library).txt,horror,../data/chinese/horror/5. 奇门遁甲 (周德东) (Z-Library).txt
+0.08547371966960103,0.48474946806865093,13.299671303767434,ch,2909210,7. 周德东恐怖悬疑小说合集 (周德东) (Z-Library).txt,horror,../data/chinese/horror/7. 周德东恐怖悬疑小说合集 (周德东) (Z-Library).txt
+0.08431298991917015,0.505367572967149,12.70629641946569,ch,458494,8. 必须犯规的游戏 (宁航一 [宁航一]) (Z-Library).txt,horror,../data/chinese/horror/8. 必须犯规的游戏 (宁航一 [宁航一]) (Z-Library).txt
+0.08540241448692153,0.5055835010060362,17.052667696002747,ch,99400,3. 荒村公寓 (蔡骏) (Z-Library).txt,horror,../data/chinese/horror/3. 荒村公寓 (蔡骏) (Z-Library).txt
+0.051325637238317644,0.5276225997838052,34.853897037676155,ch,121187,1. 精绝古城 (天下霸唱) (Z-Library).txt,horror,../data/chinese/horror/1. 精绝古城 (天下霸唱) (Z-Library).txt
+0.028519687374240144,0.5470103573168407,23.407535944471988,ch,94426,9. 天坑宝藏 (（电子书优先上架）2020年天下霸唱开年新作 明星影响力IP“天坑”系列 马殿臣、崔老道、窦占龙，曝人物结局。) (天下霸唱 [未知]) (Z-Library).txt,horror,../data/chinese/horror/9. 天坑宝藏 (（电子书优先上架）2020年天下霸唱开年新作 明星影响力IP“天坑”系列 马殿臣、崔老道、窦占龙，曝人物结局。) (天下霸唱 [未知]) (Z-Library).txt
+0.044762083881888286,0.5296637619376006,30.86294743631087,ch,95706,2. 鬼吹灯之龙岭迷窟 (天下霸唱) (Z-Library).txt,horror,../data/chinese/horror/2. 鬼吹灯之龙岭迷窟 (天下霸唱) (Z-Library).txt
+0.05982112723590955,0.5204426016103371,16.513535031847134,ch,82964,4. 《地狱的第十九层》 (蔡骏) (Z-Library).txt,horror,../data/chinese/horror/4. 《地狱的第十九层》 (蔡骏) (Z-Library).txt
+0.05710880349863035,0.5416982136574061,15.588128876636802,ch,542841,10. 死亡通知单系列（套装5本）（死亡通知单+死亡通知单之离别曲（上）+死亡通知单之离别曲（下）+死亡通知单之宿命（上）+死亡通知单之宿命（下）... (Z-Library).txt,horror,../data/chinese/horror/10. 死亡通知单系列（套装5本）（死亡通知单+死亡通知单之离别曲（上）+死亡通知单之离别曲（下）+死亡通知单之宿命（上）+死亡通知单之宿命（下）... (Z-Library).txt
+0.0662344417370435,0.5788461579966289,11.844043967280163,ch,463339,5.-银河之心三部曲（天垂日暮-暗黑深渊-逐影追光）中国科幻银河奖桂冠作家史诗巨著-_中国科幻基石丛书_-_江波_-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/5.-银河之心三部曲（天垂日暮-暗黑深渊-逐影追光）中国科幻银河奖桂冠作家史诗巨著-_中国科幻基石丛书_-_江波_-_Z-Library_.txt
+0.054448262121542475,0.525032517085567,12.907035419699175,ch,133007,9.-小镇奇谈（充满想象力和少年感的极限科幻之作！银河奖得主，《群星》作者七月最新作品，陈思诚、潘海天、今何在强力推荐！90年代的神秘小镇、...-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/9.-小镇奇谈（充满想象力和少年感的极限科幻之作！银河奖得主，《群星》作者七月最新作品，陈思诚、潘海天、今何在强力推荐！90年代的神秘小镇、...-_Z-Library_.txt
+0.06410152119092166,0.5471406491499228,13.036055143160127,ch,12293,2. 郝景芳-北京折叠.txt,sci-fi,../data/chinese/sci-fi/2. 郝景芳-北京折叠.txt
+0.04905073905946018,0.4979315279858673,20.69605461066759,ch,178876,3.-劉慈欣《三體Ⅱ：黑暗森林》_1.txt,sci-fi,../data/chinese/sci-fi/3.-劉慈欣《三體Ⅱ：黑暗森林》_1.txt
+0.08255340732063715,0.528675112007439,13.298056849205075,ch,82807,6.-伪人2075·意识重组-_迟卉_-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/6.-伪人2075·意识重组-_迟卉_-_Z-Library_.txt
+0.04087739453365038,0.5665304086848878,16.344541484716157,ch,112287,9.-群星-_七月_-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/9.-群星-_七月_-_Z-Library_.txt
+0.0773200550696202,0.5290393319098771,13.953870930633844,ch,121301,10.-与机器人同行——阿缺中短篇科幻小说选-_中国科幻基石丛书_-_阿缺_-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/10.-与机器人同行——阿缺中短篇科幻小说选-_中国科幻基石丛书_-_阿缺_-_Z-Library_.txt
+0.049779616051471666,0.5872135530905976,20.642949547218628,ch,95742,7.-宇宙涟漪中的孩子-_谢云宁_-_Z-Library_.txt,sci-fi,../data/chinese/sci-fi/7.-宇宙涟漪中的孩子-_谢云宁_-_Z-Library_.txt
+0.045705790416650786,0.5137708230091869,19.085485631138596,ch,104932,1. 劉慈欣《三體》.txt,sci-fi,../data/chinese/sci-fi/1. 劉慈欣《三體》.txt
+0.046503424556865285,0.5826802669096681,14.256558544966893,ch,170095,8. 决战奇点（华语科幻星云奖、首届晨星奖、晋康奖获得者萧星寒，全新科幻力作！中国科幻四大天王联袂推荐的重磅之作！） (萧星寒) (Z-Library).txt,sci-fi,../data/chinese/sci-fi/8. 决战奇点（华语科幻星云奖、首届晨星奖、晋康奖获得者萧星寒，全新科幻力作！中国科幻四大天王联袂推荐的重磅之作！） (萧星寒) (Z-Library).txt
+0.08979278587874137,0.4956394334751971,16.368100494861057,ch,42999,9. 时间的女儿 (八月长安) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/9. 时间的女儿 (八月长安) (Z-Library).txt
+0.0497680342035841,0.5726917129082143,18.701939435182034,ch,109930,4. 不如去闯（与其迷茫，不如去闯！耶鲁哈佛毕业、90后总裁、学长李柘远LEO送给年轻人的干货+动力手册！） (李柘远) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/4. 不如去闯（与其迷茫，不如去闯！耶鲁哈佛毕业、90后总裁、学长李柘远LEO送给年轻人的干货+动力手册！） (李柘远) (Z-Library).txt
+0.0931732147869427,0.4870845629234025,14.270758904406193,ch,131819,1. 最好的我们 (八月长安 [八月长安]) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/1. 最好的我们 (八月长安 [八月长安]) (Z-Library).txt
+0.15414498057626255,0.421037632553884,12.740493025033441,ch,66671,7. 左耳 (饶雪漫) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/7. 左耳 (饶雪漫) (Z-Library).txt
+0.07942557919982174,0.5198813160780359,10.700025097251851,ch,170537,6. 少年的你，如此美丽 (玖月晞 [jiuyuexi]) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/6. 少年的你，如此美丽 (玖月晞 [jiuyuexi]) (Z-Library).txt
+0.07082143105970877,0.53837176896816,13.439138576779026,ch,57412,5. 云边有个小卖部（张嘉佳全新力作！写给我们所遇见的悲伤和希望，和路上从未断绝的一缕光！） (张嘉佳) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/5. 云边有个小卖部（张嘉佳全新力作！写给我们所遇见的悲伤和希望，和路上从未断绝的一缕光！） (张嘉佳) (Z-Library).txt
+0.08285947929939334,0.49076697792062074,14.563910815676499,ch,210332,10. 暗恋·橘生淮南 (八月长安 [八月长安]) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/10. 暗恋·橘生淮南 (八月长安 [八月长安]) (Z-Library).txt
+0.08562893105911085,0.5248458295254698,12.035585543950457,ch,520852,8. 玖月晞亲爱的系列（套装2册） (玖月晞 [jiuyuexi]) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/8. 玖月晞亲爱的系列（套装2册） (玖月晞 [jiuyuexi]) (Z-Library).txt
+0.06859666840882923,0.5314316253590754,15.284581656555948,ch,254473,2. 你好，旧时光（三周年完美纪念版）（套装共3册） (八月长安 [八月长安]) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/2. 你好，旧时光（三周年完美纪念版）（套装共3册） (八月长安 [八月长安]) (Z-Library).txt
+0.12052813340710919,0.4491423556123714,18.968874411871155,ch,104822,3. 致我们单纯的小美好 (赵乾乾) (Z-Library).txt,ya_school_life,../data/chinese/ya_school_life/3. 致我们单纯的小美好 (赵乾乾) (Z-Library).txt
+0.12875019248923733,0.7374178991557254,10.249725500960746,en,149359,The Nightingale - Kristin Hannah.txt,history_fiction,../data/english/history_fiction/The Nightingale - Kristin Hannah.txt
+0.16213633363218097,0.7440419306213731,9.97650874778848,en,101501,The Song of Achilles - Madeline Miller.txt,history_fiction,../data/english/history_fiction/The Song of Achilles - Madeline Miller.txt
+0.12174012724250588,0.7216058430020715,17.167416362102895,en,122129,The Last Kingdom - Bernard Cornwell.txt,history_fiction,../data/english/history_fiction/The Last Kingdom - Bernard Cornwell.txt
+0.10421978104379125,0.7300258698260348,11.084851423425919,en,320064,Fall of Giants - Ken Follett.txt,history_fiction,../data/english/history_fiction/Fall of Giants - Ken Follett.txt
+0.1458690765631451,0.7342401027570072,11.872447034475247,en,217990,Wolf Hall - Hilary Mantel.txt,history_fiction,../data/english/history_fiction/Wolf Hall - Hilary Mantel.txt
+0.11335275896265608,0.7062301132991534,15.607900555787964,en,261167,Paradise Alley - Kevin Baker.txt,history_fiction,../data/english/history_fiction/Paradise Alley - Kevin Baker.txt
+0.14998872477167663,0.7324388318863457,12.125437921900367,en,141904,Bring Up the Bodies - Hilary Mantel.txt,history_fiction,../data/english/history_fiction/Bring Up the Bodies - Hilary Mantel.txt
+0.09040399357072205,0.7208905168150346,11.771854816701538,en,129408,All the Light We Cannot See - Anthony Doerr.txt,history_fiction,../data/english/history_fiction/All the Light We Cannot See - Anthony Doerr.txt
+0.12846600054666382,0.7231957562689181,15.96073679108095,en,98781,March - Geraldine Brooks.txt,history_fiction,../data/english/history_fiction/March - Geraldine Brooks.txt
+0.10965020102933364,0.7354184344295446,9.338739539361624,en,126101,The Four Winds - Kristin Hannah.txt,history_fiction,../data/english/history_fiction/The Four Winds - Kristin Hannah.txt
+0.1445273171834227,0.7401117754628203,9.219359727221065,en,97338,The Last House on Needless Street - Catriona Ward.txt,horror,../data/english/horror/The Last House on Needless Street - Catriona Ward.txt
+0.13590239834051518,0.7417640580391989,10.937083382060578,en,93523,Mexican Gothic - Silvia Moreno-Garcia.txt,horror,../data/english/horror/Mexican Gothic - Silvia Moreno-Garcia.txt
+0.1281935590292939,0.734259016679766,10.937543114884585,en,206118,Duma Key - Stephen King.txt,horror,../data/english/horror/Duma Key - Stephen King.txt
+0.12420432131970593,0.7312175004482697,12.934048412813452,en,89232,A Head Full of Ghosts - Paul Tremblay.txt,horror,../data/english/horror/A Head Full of Ghosts - Paul Tremblay.txt
+0.11973151712565393,0.7476204577181775,12.348424168553022,en,70917,Seed - Ania Ahlborn.txt,horror,../data/english/horror/Seed - Ania Ahlborn.txt
+0.11562629386979711,0.7379380890913076,10.37891809908999,en,164236,Doctor Sleep - Stephen King.txt,horror,../data/english/horror/Doctor Sleep - Stephen King.txt
+0.11887074947453284,0.7388788114364688,7.485129310344828,en,69462,"Bird Box - Malerman, Josh.txt",horror,"../data/english/horror/Bird Box - Malerman, Josh.txt"
+0.12622044157993292,0.7297043069285372,12.282306375695336,en,114815,Come With Me - Ronald Malfi.txt,horror,../data/english/horror/Come With Me - Ronald Malfi.txt
+0.138288376548451,0.7438660657914788,10.757142857142858,en,91866,The Final Girl Support Group - Grady Hendrix.txt,horror,../data/english/horror/The Final Girl Support Group - Grady Hendrix.txt
+0.13791248040225246,0.7108717634725817,12.300924340979117,en,107793,Heart-Shaped Box - Joe Hill.txt,horror,../data/english/horror/Heart-Shaped Box - Joe Hill.txt
+0.08856055739487079,0.7263527202648614,9.119051910598413,en,101185,The Martian - Andy Weir.txt,sci-fi,../data/english/sci-fi/The Martian - Andy Weir.txt
+0.08858408809539324,0.7218674659542582,11.126389560173997,en,92082,We Are Legion (We Are Bob) - Dennis E. Taylor.txt,sci-fi,../data/english/sci-fi/We Are Legion (We Are Bob) - Dennis E. Taylor.txt
+0.11337825271726704,0.7508803487858047,9.304162825331536,en,131198,"The Long Way to a Small, Angry Planet - Becky Chambers.txt",sci-fi,"../data/english/sci-fi/The Long Way to a Small, Angry Planet - Becky Chambers.txt"
+0.1339079251629178,0.7092705486651251,16.983771502758845,en,156981,Uprooted - Naomi Novik.txt,sci-fi,../data/english/sci-fi/Uprooted - Naomi Novik.txt
+0.11955360840471675,0.7369711632773164,11.693386007391359,en,91758,Old Man's War - John Scalzi.txt,sci-fi,../data/english/sci-fi/Old Man's War - John Scalzi.txt
+0.10634181818181818,0.7299272727272728,12.618151784894925,en,137500,Ready Player One - Ernest Cline.txt,sci-fi,../data/english/sci-fi/Ready Player One - Ernest Cline.txt
+0.12835953346855983,0.7244231744421906,13.724227925184863,en,31552,All Systems Red - Martha Wells.txt,sci-fi,../data/english/sci-fi/All Systems Red - Martha Wells.txt
+0.11611765424877116,0.7441308200700198,12.091101023962842,en,114539,Ancillary Justice - Ann Leckie.txt,sci-fi,../data/english/sci-fi/Ancillary Justice - Ann Leckie.txt
+0.12804615430843658,0.7158625386872866,11.089525713651005,en,99839,The Hunger Games - Suzanne Collins.txt,sci-fi,../data/english/sci-fi/The Hunger Games - Suzanne Collins.txt
+0.10510705280494381,0.722005217822215,12.40144600090375,en,137222,The Fifth Season - N. K. Jemisin.txt,sci-fi,../data/english/sci-fi/The Fifth Season - N. K. Jemisin.txt
+0.1576373304712655,0.7473412040199043,9.05988950276243,en,81992,To All the Boys I've Loved Before - Jenny Han.txt,ya_school_life,../data/english/ya_school_life/To All the Boys I've Loved Before - Jenny Han.txt
+0.151749010113238,0.766462384303044,9.057909765848088,en,79302,Eleanor & Park - Rainbow Rowell.txt,ya_school_life,../data/english/ya_school_life/Eleanor & Park - Rainbow Rowell.txt
+0.15022051852767818,0.7633135484934669,7.821713548803095,en,97044,The Hate U Give - Angie Thomas.txt,ya_school_life,../data/english/ya_school_life/The Hate U Give - Angie Thomas.txt
+0.16644704215373715,0.7544739638682253,8.546258173891983,en,70575,P.S. I Like You - Kasie West.txt,ya_school_life,../data/english/ya_school_life/P.S. I Like You - Kasie West.txt
+0.1683667832811637,0.748803167004235,10.375394020441304,en,108620,Divergent - Veronica Roth.txt,ya_school_life,../data/english/ya_school_life/Divergent - Veronica Roth.txt
+0.17615530132420504,0.7589256223163079,8.429005315110098,en,66606,The Fill-In Boyfriend - Kasie West.txt,ya_school_life,../data/english/ya_school_life/The Fill-In Boyfriend - Kasie West.txt
+0.17020419467734219,0.756418326325419,9.884768541562966,en,119151,Twilight - Stephenie Meyer.txt,ya_school_life,../data/english/ya_school_life/Twilight - Stephenie Meyer.txt
+0.13402529635301458,0.7553854007146503,10.639029688631426,en,88155,The Cousins - Karen McManus.txt,ya_school_life,../data/english/ya_school_life/The Cousins - Karen McManus.txt
+0.1532763941721094,0.7450082537859758,9.496319520174483,en,69665,The Sun Is Also a Star - Nicola Yoon.txt,ya_school_life,../data/english/ya_school_life/The Sun Is Also a Star - Nicola Yoon.txt
+0.14013437542849308,0.723201383834868,11.934667673716012,en,94809,All the Bright Places - Jennifer Niven.txt,ya_school_life,../data/english/ya_school_life/All the Bright Places - Jennifer Niven.txt
