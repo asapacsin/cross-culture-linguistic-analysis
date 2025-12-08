@@ -280,6 +280,50 @@ def process_genre_folder(base_path,lang="en"):
     df = add_tfidf_features(df, base_path)
     return df
 
+def load_corpus(base_path, lang="en"):
+    """Load raw corpus into a DataFrame for downstream BERT training."""
+    records = []
+    total_files = 0
+    success = 0
+
+    for genre in sorted(os.listdir(base_path)):
+        genre_path = os.path.join(base_path, genre)
+        if not os.path.isdir(genre_path):
+            continue
+
+        print(f"\nProcessing genre: {genre}")
+        files_in_genre = [f for f in os.listdir(genre_path) if f.lower().endswith(".txt")]
+        total_files += len(files_in_genre)
+
+        for filename in files_in_genre:
+            filepath = os.path.join(genre_path, filename)
+
+            text = safe_read_text(filepath)
+            if text is None:
+                print(f"  Failed reading: {filename}")
+                continue
+
+            if len(text.strip()) < 1000:
+                print(f"  Too short, skipping: {filename}")
+                continue
+
+            try:
+                records.append(
+                    {
+                        "book": filename,
+                        "genre": genre,
+                        "language": lang,
+                        "text": clean_text(text),
+                    }
+                )
+                success += 1
+                print(f"  Success: {filename[:50]:50} → {len(text.split()):,} words")
+            except Exception as e:
+                print(f"  Load failed: {filename} | Error: {e}")
+
+    print(f"\nFinished! Successfully loaded {success}/{total_files} files.")
+    return pd.DataFrame(records)
+
 def add_tfidf_features(df, base_path):
     """
     Computes TF-IDF separately per language, then combines.
