@@ -22,13 +22,20 @@ Both Chinese and English show strong pronoun use when discussing school-life top
 
 ## Repository Structure
 
-cross-culture-linguistic-analysis/\n
+cross-culture-linguistic-analysis/
+
 ├── data/                  # Raw and processed datasets (corpora, annotations)
+
 ├── notebooks/             # Jupyter notebooks for exploratory analysis & experiments
+
 ├── src/                   # Main source code (Python scripts/modules)
+
 │   └── file_process.py
+
 ├── results/               # Outputs: figures, tables, model performance
+
 ├── requirements.txt       # Python dependencies
+
 └── README.md              # This file
 
 ## Requirements----
