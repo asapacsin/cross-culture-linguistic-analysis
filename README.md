@@ -21,6 +21,7 @@ in various languages and cultural contexts.
 Both Chinese and English show strong pronoun use when discussing school-life topics.
 
 ## Repository Structure
+
 cross-culture-linguistic-analysis/
 ├── data/                  # Raw and processed datasets (corpora, annotations)
 ├── notebooks/             # Jupyter notebooks for exploratory analysis & experiments
