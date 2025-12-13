@@ -10,6 +10,9 @@ This repository provides tools, scripts, and datasets for analyzing linguistic d
 
 in various languages and cultural contexts.
 
+## Data collections
+The collected data include Chinese and English novel writing in different genres. In total 150books.
+
 ## Key Features
 
 - Data collection and preprocessing pipelines for multilingual texts
@@ -19,6 +22,10 @@ in various languages and cultural contexts.
 
 ### Key Finding
 Both Chinese and English show strong pronoun use when discussing school-life topics.
+
+### Visualize result
+The bar dot plot shows that only the person pronoun exhibit high frequency pattern both in Chinese and English school life writing. Which indicated both culture share the same perception that school life genre strongly link to personal feeling content.
+<img src="./results/plot.png" width="300">
 
 ## Repository Structure
 
