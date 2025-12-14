@@ -34,9 +34,21 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 
 ## Repository Structure
 
-cross-culture-linguistic-analysis/
+data/                  # Raw and processed datasets (corpora, annotations)
 
-├── data/                  # Raw and processed datasets (corpora, annotations)
+├── chinese/   
+
+│   └── genrename/
+
+│   │   └── filename.txt
+
+├── english/
+
+│   └── genrename/
+
+│   │   └── filename.txt
+
+cross-culture-linguistic-analysis/
 
 ├── notebooks/             # Jupyter notebooks for exploratory analysis & experiments
 
@@ -45,6 +57,10 @@ cross-culture-linguistic-analysis/
 │   └── file_process.py
 
 ├── results/               # Outputs: figures, tables, model performance
+
+├── filename/              # Store the data of the book
+
+├── collect_book.py        # Collect the book name from the data
 
 ├── requirements.txt       # Python dependencies
 
