@@ -277,7 +277,6 @@ def process_genre_folder(base_path,lang="en"):
     print(f"\nFinished! Successfully processed {success}/{total_files} files.")
     df = pd.DataFrame(results)
     df = clean_df(df)
-    df = add_tfidf_features(df, base_path)
     return df
 
 def load_corpus(base_path, lang="en"):

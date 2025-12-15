@@ -8,6 +8,15 @@
 7. 窃明 (灰熊猫) (Z-Library).txt
 8. 四时歌：骑桶人自选集 (骑桶人) (Z-Library).txt
 9. 辛亥：计划外革命 (雪珥) (Z-Library).txt
+东宫.txt
+后宫：甄嬛传.txt
+将进酒-唐酒卿.txt
+帝王业.txt
+日曜卷·青天寨.txt
+琅琊榜之风起长林.txt
+胡雪岩-高阳.txt
+镜·双城.txt
+雍正皇帝-二月河.txt
 1. 精绝古城 (天下霸唱) (Z-Library).txt
 10. 死亡通知单系列（套装5本）（死亡通知单+死亡通知单之离别曲（上）+死亡通知单之离别曲（下）+死亡通知单之宿命（上）+死亡通知单之宿命（下）... (Z-Library).txt
 2. 鬼吹灯之龙岭迷窟 (天下霸唱) (Z-Library).txt
@@ -18,6 +27,19 @@
 7. 周德东恐怖悬疑小说合集 (周德东) (Z-Library).txt
 8. 必须犯规的游戏 (宁航一 [宁航一]) (Z-Library).txt
 9. 天坑宝藏 (（电子书优先上架）2020年天下霸唱开年新作 明星影响力IP“天坑”系列 马殿臣、崔老道、窦占龙，曝人物结局。) (天下霸唱 [未知]) (Z-Library).txt
+『莲蓬鬼话』[经历]一些真实无解的故事(已完结） (天涯莲蓬鬼话发贴) (Z-Library).txt
+七杀 (上官午夜 [上官午夜]) (Z-Library).txt
+他来了，请闭眼-_丁墨_-_Z-Library_.txt
+伤心至死1·万劫-_鬼古女_-_Z-Library__1.txt
+十宗罪全集-_蜘蛛_-_Z-Library_.txt
+心理罪-_雷米_-_Z-Library_.txt
+怨气撞铃 (尾鱼) (Z-Library).txt
+法医秦明：尸语者（全2册） (法医秦明) (Z-Library).txt
+盗墓笔记 (南派三叔) (Z-Library).txt
+碎脸 (鬼古女) (Z-Library).txt
+红缎-_红娘子_-_Z-Library__1.txt
+西出玉门-_尾鱼_-_Z-Library_.txt
+诡案组（全9册）（【悬疑+灵异+惊悚】超人气悬疑小说家求无欲《诡案组》系列重磅来袭，拨开迷雾，直指真相！绝密灵异案件大曝光，所有案件均... (Z-Library).txt
 1. 最好的我们 (八月长安 [八月长安]) (Z-Library).txt
 10. 暗恋·橘生淮南 (八月长安 [八月长安]) (Z-Library).txt
 2. 你好，旧时光（三周年完美纪念版）（套装共3册） (八月长安 [八月长安]) (Z-Library).txt
@@ -28,6 +50,25 @@
 7. 左耳 (饶雪漫) (Z-Library).txt
 8. 玖月晞亲爱的系列（套装2册） (玖月晞 [jiuyuexi]) (Z-Library).txt
 9. 时间的女儿 (八月长安) (Z-Library).txt
+七月与安生 (安妮宝贝) (Z-Library).txt
+会有天使替我爱你 (明晓溪) (Z-Library).txt
+后来我们都哭了 (夏七夕) (Z-Library).txt
+夏至未至（2010修订版） (郭敬明) (Z-Library).txt
+失恋33天 (鲍鲸鲸) (Z-Library).txt
+如果蜗牛有爱情 (丁墨) (Z-Library).txt
+悲伤逆流成河 (郭敬明) (Z-Library).txt
+杉杉来吃 (顾漫) (Z-Library).txt
+沙漏Ⅱ：饶雪漫青春疼痛系列之七 (饶雪漫) (Z-Library).txt
+深海里的星星 (独木舟) (Z-Library).txt
+温暖的弦 (安宁) (Z-Library).txt
+独家记忆 (木浮生) (Z-Library).txt
+至此终年 (墨宝非宝) (Z-Library).txt
+致我们终将逝去的青春 (辛夷坞) (Z-Library).txt
+落落：年华是无效信.txt (落落：年华是无效信.txt) (Z-Library).txt
+西决 (笛安) (Z-Library).txt
+谁的青春不迷茫：一个奋斗小青年的逆袭人生 (刘同) (Z-Library).txt
+那些回不去的年少时光(1+2,外加两篇番外) (桐华 [桐华]) (Z-Library).txt
+顾漫甜蜜三部曲（何以笙箫默+微微一笑很倾城+杉杉来吃）（套装共3册） (顾漫) (Z-Library).txt
 1. 劉慈欣《三體》.txt
 10.-与机器人同行——阿缺中短篇科幻小说选-_中国科幻基石丛书_-_阿缺_-_Z-Library_.txt
 2. 郝景芳-北京折叠.txt
@@ -38,44 +79,127 @@
 8. 决战奇点（华语科幻星云奖、首届晨星奖、晋康奖获得者萧星寒，全新科幻力作！中国科幻四大天王联袂推荐的重磅之作！） (萧星寒) (Z-Library).txt
 9.-小镇奇谈（充满想象力和少年感的极限科幻之作！银河奖得主，《群星》作者七月最新作品，陈思诚、潘海天、今何在强力推荐！90年代的神秘小镇、...-_Z-Library_.txt
 9.-群星-_七月_-_Z-Library_.txt
+三体X：观想之宙（科幻银河奖、华语科幻星云奖得主作品） (宝树) (Z-Library).txt
+中国科幻大片 (飞氘 著) (Z-Library).txt
+伤心者 (何夕) (Z-Library).txt
+地铁 (韩松) (Z-Library).txt
+孤猿随笔【豆瓣8.1分推荐！日本民俗学奠基人 柳田国男力作！论述了与日本的民间信仰有关的各种动物，综合运用口头传承、故事、文献记录等，描... (Z-Library).txt
+小镇奇谈（充满想象力和少年感的极限科幻之作！银河奖得主，《群星》作者七月最新作品，陈思诚、潘海天、今何在强力推荐！90年代的神秘小镇、... (Z-Library).txt
+归路 (墨宝非宝) (Z-Library).txt
+拉法：纳达尔自传【上海译文出品！20座大满贯奖杯得主纳达尔亲笔自传，网球天皇巨星背后的精彩传奇，43幅高清彩照记录一代巨星的43个伟大瞬间... (Z-Library).txt
+时间之墟 (宝树) (Z-Library).txt
+机器之门 (江波) (Z-Library).txt
+球状闪电（没有《球状闪电》，就没有后来的《三体》《三体》前传，刘慈欣三大长篇作品之一！《三体》《球状闪电》《超新星纪元》） (刘慈欣) (Z-Library).txt
+类人 (王晋康) (Z-Library).txt
+红色海洋 (韩松 [韩松]) (Z-Library).txt
+荒潮 (陈楸帆) (Z-Library).txt
+蚁生 (王晋康) (Z-Library).txt
+雪球专刊103期——熊市赚钱法门 (雪球用户) (Z-Library).txt
 All the Light We Cannot See - Anthony Doerr.txt
+Atonement (Ian McEwan) (Z-Library).txt
+Boleyn 1 The Other Boleyn Girl (Philippa Gregory) (Z-Library).txt
 Bring Up the Bodies - Hilary Mantel.txt
+Emperor the Gates of Rome (Conn Iggulden) (Z-Library).txt
 Fall of Giants - Ken Follett.txt
+Girl With A Pearl Earring (Tracy Chevalier) (Z-Library).txt
+Hamnet (Maggie Oarrell) (Z-Library).txt
 March - Geraldine Brooks.txt
+Master  Commander (OBrian, Patrick) (Z-Library).txt
+Memoirs Of A Geisha A Novel (Arthur Golden) (Z-Library).txt
+Outlander (Diana Gabaldon) (Z-Library).txt
 Paradise Alley - Kevin Baker.txt
+Perfume (Patrick Suﾌ・kind) (Z-Library).txt
+Pompeii (Robert Harris) (Z-Library).txt
+Ragtime - a novel (1974) (E. L. Doctorow) (Z-Library).txt
+Sarum (Rutherfurd Edward) (Z-Library).txt
+Tale of Two Cities (Charles Dickens) (Z-Library).txt
+The Book Thief (Markus Zusak) (Z-Library).txt
 The Four Winds - Kristin Hannah.txt
+The Kite Runner (Khaled Hosseini) (Z-Library).txt
 The Last Kingdom - Bernard Cornwell.txt
+The Name of the Rose (Umberto Eco) (Z-Library).txt
 The Nightingale - Kristin Hannah.txt
+The pillars of the earth (Follett Ken) (Z-Library).txt
 The Song of Achilles - Madeline Miller.txt
+The Underground Railroad (Colson Whitehead) (Z-Library).txt
+The White Queen (The Plantagenet  Tudor Novels 2) (Philippa Gregory) (Z-Library).txt
+War and Peace (Leo Tolstoy, Louise Maude, Aylmer Maude) (Z-Library).txt
 Wolf Hall - Hilary Mantel.txt
 A Head Full of Ghosts - Paul Tremblay.txt
+Barker, Clive - The Hellbound Heart (Barker, Clive) (Z-Library).txt
 Bird Box - Malerman, Josh.txt
+Borne (Jeff Vandermeer) (Z-Library).txt
+Bret Easton Elliss American Psycho a readers guide (Julian Murphet) (Z-Library) (1).txt
 Come With Me - Ronald Malfi.txt
+Coraline (Neil Gaiman, Chris Riddell (Illustrations)) (Z-Library).txt
 Doctor Sleep - Stephen King.txt
 Duma Key - Stephen King.txt
+Ghost Story (Peter Straub) (Z-Library).txt
+Gone Girl (Gillian Flynn) (Z-Library).txt
 Heart-Shaped Box - Joe Hill.txt
+Hill, Joe - NOS4A2 (Hill, Joe [Hill, Joe]) (Z-Library).txt
+House Of Leaves (Mark Z. Danielewski) (Z-Library).txt
+I Am Legend. (Richard Matheson) (Z-Library).txt
+IT (Stephen King) (Z-Library).txt
 Mexican Gothic - Silvia Moreno-Garcia.txt
+Odd Thomas 1 Odd Thomas. (Dean Koontz) (Z-Library).txt
 Seed - Ania Ahlborn.txt
 The Final Girl Support Group - Grady Hendrix.txt
+The Haunting of Hill House (Shirley Jackson) (Z-Library).txt
 The Last House on Needless Street - Catriona Ward.txt
+The Silence of the Lambs (Thomas Harris [Harris, Thomas]) (Z-Library).txt
+The Terror (Dan Simmons) (Z-Library).txt
+World War Z (Max Brooks) (Z-Library).txt
+[The Girl With All the Gifts 01] • The Girl With All the Gifts (Carey, M.R.) (Z-Library).txt
+A Good Girl's Guide to Murder - Holly Jackson.txt
 All the Bright Places - Jennifer Niven.txt
+Another Day - David Levithan.txt
 Divergent - Veronica Roth.txt
 Eleanor & Park - Rainbow Rowell.txt
+If I Stay - Gayle Forman.txt
+On the Come Up - Angie Thomas.txt
+One of Us is Lying - Karen M. McManus.txt
 P.S. I Like You - Kasie West.txt
+Simon vs. the Homo Sapiens Agenda - Becky Albertalli.txt
+Six of Crows - Leigh Bardugo.txt
+Stargirl - Jerry Spinelli.txt
 The Cousins - Karen McManus.txt
+The Fault in Our Stars - John Green.txt
 The Fill-In Boyfriend - Kasie West.txt
+The Giver - The Giver.txt
 The Hate U Give - Angie Thomas.txt
+The Maze Runner - James Dashner.txt
+The Outsiders - Neil Jackson.txt
+The Perks of Being a Wallflower - Stephen Chbosky.txt
+The Summer I Turned Pretty - Jenny Han.txt
 The Sun Is Also a Star - Nicola Yoon.txt
+The Truth About Forever - Sarah Dessen.txt
+They Both Die at the End - Adam Silvera.txt
+Thirteen Reasons Why - Jay Asher.txt
 To All the Boys I've Loved Before - Jenny Han.txt
 Twilight - Stephenie Meyer.txt
+Uglies_ Uglies [Book 1] - Scott Westerfeld.txt
+We Were Liars - E. Lockhart.txt
+Wonder - R. J. Palacio.txt
+A Memory Called Empire (Teixcalaan) - Arkady Martine.txt
+Accelerando - Charles Stross.txt
 All Systems Red - Martha Wells.txt
 Ancillary Justice - Ann Leckie.txt
+Annihilation - Vandermeer, Jeff.txt
+Children of Time - Adrian Tchaikovsky.txt
+Dark Matter - Blake Crouch.txt
+Exhalation - Ted Chiang.txt
+Leviathan Wakes - James S.A. Corey.txt
 Old Man's War - John Scalzi.txt
+Provenance - Ann Leckie.txt
 Ready Player One - Ernest Cline.txt
+Red Rising (The Red Rising Trilogy, Book 1 - Pierce Brown.txt
+Station Eleven - Emily St. John Mandel.txt
 The Fifth Season - N. K. Jemisin.txt
 The Hunger Games - Suzanne Collins.txt
 The Long Way to a Small, Angry Planet - Becky Chambers.txt
 The Martian - Andy Weir.txt
+The Peripheral - William Gibson.txt
 Uprooted - Naomi Novik.txt
 We Are Legion (We Are Bob) - Dennis E. Taylor.txt
 1. 劉慈欣《三體》.txt

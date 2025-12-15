@@ -11,7 +11,7 @@ This repository provides tools, scripts, and datasets for analyzing linguistic d
 in various languages and cultural contexts.
 
 ## Data collections
-The collected data include Chinese and English novel writing in different genres. In total 150books.
+The collected data include Chinese and English novel writing in different genres. In total 210 books.
 
 ## Key Features
 
@@ -32,17 +32,18 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 
 <img src="./results/plot.png" width="800">
 
+## file processing use case
+python collect_book.py --path ../data --output filename/file.txt
+
 ## Repository Structure
 
 cross-culture-linguistic-analysis/
 
 ├── data/                  # Raw and processed datasets (corpora, annotations)
 
-├── notebooks/             # Jupyter notebooks for exploratory analysis & experiments
-
-├── src/                   # Main source code (Python scripts/modules)
-
-│   └── file_process.py
+├── notebooks              # Jupyter notebooks for exploratory analysis & experiments
+                
+│── file_process.py        # (Python scripts/modules)
 
 ├── results/               # Outputs: figures, tables, model performance
 
