@@ -32,41 +32,17 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 ## file processing use case
 python collect_book.py --path ../data --output filename/file.txt
 
-## Repository Structure
-
-```
-data/                  # Raw and processed datasets (corpora, annotations)
-
-cross-culture-linguistic-analysis/
-
-├── notebooks              # Jupyter notebooks for exploratory analysis & experiments
-                
-│── file_process.py        # (Python scripts/modules)
-
-├── results/               # Outputs: figures, tables, model performance
-
-├── requirements.txt       # Python dependencies
-
-└── README.md              # This file
-```
-
 ## 📁 Repository Structure
 
 ```
-AltumAge/
-├── example.ipynb                    # Complete usage example
-├── example_dependencies/            # Required files for running AltumAge
-│   ├── AltumAge.h5                 # TensorFlow model
-│   ├── multi_platform_cpgs.pkl     # List of CpG sites
-│   ├── scaler.pkl                  # Preprocessing scaler
-│   └── example_data.pkl            # Example dataset
-├── dependencies/
-│   └── AltumAge.pt                 # PyTorch model
-├── CpGsites.csv                    # Required CpG sites
-└── supplementary_results/          # Detailed performance metrics
+data/                  # Raw and processed datasets (corpora, annotations)
+cross-culture-linguistic-analysis/
+├── notebooks              # Jupyter notebooks for exploratory analysis & experiments       
+│── file_process.py        # (Python scripts/modules)
+├── results/               # Outputs: figures, tables, model performance
+├── requirements.txt       # Python dependencies
+└── README.md              # This file
 ```
-
-
 
 ## Requirements----
 Python 3.8+ and the packages listed in requirements.txt.
