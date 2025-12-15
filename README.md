@@ -29,7 +29,7 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 
 <img src="./results/plot.png" width="800">
 
-## file processing use case
+## File processing use case
 python collect_book.py --path ../data --output filename/file.txt
 
 ## 📁 Repository Structure
