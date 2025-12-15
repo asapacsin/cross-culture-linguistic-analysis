@@ -33,14 +33,14 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 python collect_book.py --path ../data --output filename/file.txt
 
 ## Repository Structure
-data/ # Raw and processed datasets (corpora, annotations)
-cross-culture-linguistic-analysis//&nbsp             
-├── notebooks               # Jupyter notebooks for exploratory analysis & experiments
-├── file_process.py         # Python scripts/modules
-├── results/                # Outputs: figures, tables, model performance
-├── requirements.txt        # Python dependencies
-├── collect_book.py         # Collect all book names and save in local folder
-└── README.md               # This file
+**data/** — Raw and processed datasets (corpora, annotations)
+**cross-culture-linguistic-analysis/**
+- **notebooks** — Jupyter notebooks for exploratory analysis & experiments
+- **collect_book.py** — Collect all book names and save in local folder
+- **file_process.py** — Python scripts/modules
+- **results/** — Outputs: figures, tables, model performance
+- **requirements.txt** — Python dependencies
+- **README.md** — Project documentation
 
 ## Requirements----
 Python 3.8+ and the packages listed in requirements.txt.
