@@ -34,6 +34,7 @@ python collect_book.py --path ../data --output filename/file.txt
 
 ## Repository Structure
 
+```
 data/                  # Raw and processed datasets (corpora, annotations)
 
 cross-culture-linguistic-analysis/
@@ -47,6 +48,7 @@ cross-culture-linguistic-analysis/
 ├── requirements.txt       # Python dependencies
 
 └── README.md              # This file
+```
 
 ## 📁 Repository Structure
 
