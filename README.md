@@ -34,7 +34,7 @@ python collect_book.py --path ../data --output filename/file.txt
 
 ## Repository Structure
 data/ # Raw and processed datasets (corpora, annotations)
-cross-culture-linguistic-analysis/             
+cross-culture-linguistic-analysis//&nbsp             
 ├── notebooks               # Jupyter notebooks for exploratory analysis & experiments
 ├── file_process.py         # Python scripts/modules
 ├── results/                # Outputs: figures, tables, model performance
