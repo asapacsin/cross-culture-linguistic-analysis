@@ -33,28 +33,22 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 python collect_book.py --path ../data --output filename/file.txt
 
 ## Repository Structure
-
-cross-culture-linguistic-analysis/
-
-├── data/                  # Raw and processed datasets (corpora, annotations)
-
-├── notebooks              # Jupyter notebooks for exploratory analysis & experiments
-                
-│── file_process.py        # (Python scripts/modules)
-
-├── results/               # Outputs: figures, tables, model performance
-
-├── requirements.txt       # Python dependencies
-
-└── README.md              # This file
+data/ # Raw and processed datasets (corpora, annotations)
+cross-culture-linguistic-analysis/             
+├── notebooks               # Jupyter notebooks for exploratory analysis & experiments
+├── file_process.py         # Python scripts/modules
+├── results/                # Outputs: figures, tables, model performance
+├── requirements.txt        # Python dependencies
+├── collect_book.py         # Collect all book names and save in local folder
+└── README.md               # This file
 
 ## Requirements----
 Python 3.8+ and the packages listed in requirements.txt.
 Installation
 
-Clone the repository:Bashgit clone https://github.com/asapacsin/cross-culture-linguistic-analysis.git
+Clone the repository: Bashgit clone https://github.com/asapacsin/cross-culture-linguistic-analysis.git
 cd cross-culture-linguistic-analysis
-Install dependencies:Bashpip install -r requirements.txt
+Install dependencies: Bashpip install -r requirements.txt
 
 
 ## Contributing
