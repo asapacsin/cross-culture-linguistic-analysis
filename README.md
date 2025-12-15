@@ -24,11 +24,8 @@ The collected data include Chinese and English novel writing in different genres
 Both Chinese and English show strong pronoun use when discussing school-life topics.
 
 ### Visualize result
-<<<<<<< HEAD
-The bar dot plot shows that only the person pronoun exhibit high frequency pattern both in Chinese and English school life writing. Which indicated both culture share the same perception that school life genre strongly link to personal feeling content.
-=======
+
 The bar dot plot shows that only the person pronoun exhibits a  high frequency pattern both in Chinese and English school life writing. Which indicates both cultures share the same perception that school life genre strongly links to personal feelings content.
->>>>>>> 46b450369b3790eb4ce1b0024eb272cc62fcecc9
 
 <img src="./results/plot.png" width="800">
 
