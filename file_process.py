@@ -54,6 +54,44 @@ CHINESE_PRONOUNS = {
     "别人", "別人", "人家", "有人", "某些人", "大家", "大夥", "大伙", "大伙儿", "大伙兒"
 }
 
+CH_PRONOUN_1ST = {
+    "我", "俺", "吾", "在下", "本座", "老子", "臣", "朕", "孤", "寡人",
+    "我们", "我們", "咱们", "咱們", "俺们", "俺們", "自己"
+}
+
+CH_PRONOUN_2ND = {
+    "你", "妳", "您", "尔", "爾", "汝", "乃",
+    "你们", "你們", "诸位", "諸位", "各位"
+}
+
+CH_PRONOUN_3RD = {
+    "他", "她", "它", "牠", "祂", "伊", "彼",
+    "他们", "他們", "她们", "她們", "它们", "它們"
+}
+
+EN_PRONOUN_1ST = {
+    "i", "me", "my", "mine", "myself",
+    "we", "us", "our", "ours", "ourselves"
+}
+
+EN_PRONOUN_2ND = {
+    "you", "your", "yours", "yourself", "yourselves"
+}
+
+EN_PRONOUN_3RD = {
+    "he", "him", "his", "himself",
+    "she", "her", "hers", "herself",
+    "it", "its", "itself",
+    "they", "them", "their", "theirs", "themselves"
+}
+
+def get_pronoun_portion(text):
+    words = text.split()
+    pronouns = []
+    for word in words:
+        if word in CHINESE_PRONOUNS or word in EN_PRONOUNS_POS:
+            pronouns.append(word)
+    return " ".join(pronouns)
 
 
 def safe_read_text(filepath):
@@ -82,6 +120,37 @@ def clean_df(df, verbose=True):
     
     # 3. VERY LOOSE outlier removal — use 5×IQR or percentile clipping
     numeric_cols = ["pronoun_ratio", "info_density", "avg_sent_len"]
+    
+    for col in numeric_cols:
+        # For all ratios: winsorize at 1% and 99% (keeps real variation)
+        lower = df[col].quantile(0.001)
+        upper = df[col].quantile(0.999)
+        removed = len(df[(df[col] < lower) | (df[col] > upper)])
+        df = df[df[col].between(lower, upper)]
+        
+        if verbose and removed > 0:
+            print(f"  Removed {removed} extreme values in {col}")
+    
+    
+    final = len(df)
+    if verbose:
+        print(f"\nData cleaning complete:")
+        print(f"   Before → {initial} books")
+        print(f"   After  → {final} books ({initial-final} removed)")
+        print(f"   Kept {100*final/initial:.1f}% of the data\n")
+    
+    return df.reset_index(drop=True)
+
+def clean_pronoun(df, verbose=True):
+    initial = len(df)
+    
+    # 1. Remove only real garbage (NaN / inf / empty)
+    df = df.replace([np.inf, -np.inf], np.nan)
+    df = df.dropna(subset=["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3"])
+    
+    
+    # 3. VERY LOOSE outlier removal — use 5×IQR or percentile clipping
+    numeric_cols = ["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3"]
     
     for col in numeric_cols:
         # For all ratios: winsorize at 1% and 99% (keeps real variation)
@@ -230,6 +299,106 @@ def analyze_book(text, lang="en"):
             "language": "en",
             "total_words": total_words
         }
+    
+def analyze_book_pronoun(text, lang="en"):
+    text = clean_text(text)
+
+    if len(text) < 100:
+        return None  # skip very short files
+
+    if lang == "ch" :
+        # ----------------- Chinese processing with jieba -----------------
+        words = [w for w in jieba.cut(text) if w.strip()]
+
+        # Remove pure punctuation tokens (very common in jieba output: ，。！？；：、“”‘’()[] etc.)
+        words = [w for w in words if not all(c in '，。！？；：、“”‘’()[]【】《》—… \t\n\r' for c in w)]
+        
+        total_words = len(words)
+        if total_words == 0:
+            return None
+        
+        # Personal pronouns
+        pronouns_1 = [w for w in words if w in CH_PRONOUN_1ST]
+        pronouns_2 = [w for w in words if w in CH_PRONOUN_2ND]
+        pronouns_3 = [w for w in words if w in CH_PRONOUN_3RD]
+        
+    else:
+        # ----------------- English processing with spaCy -----------------
+        text = text.lower()
+    
+        # Tokenize: split on whitespace and punctuation
+        tokens = re.findall(r"\w+(?:['’-]\w+)?", text)   # handles don't, Mary's, etc.
+        
+        # Remove pure punctuation that might slip through
+        real_tokens = [t for t in tokens if t not in string.punctuation]
+        
+        total_words = len(real_tokens)
+        if total_words == 0:
+            return None
+    
+        # 1. Personal pronoun ratio
+        pronouns_1 = [t for t in real_tokens if t in EN_PRONOUN_1ST]
+        pronouns_2 = [t for t in real_tokens if t in EN_PRONOUN_2ND]
+        pronouns_3 = [t for t in real_tokens if t in EN_PRONOUN_3RD]
+    
+    num_total_pronoun = len(pronouns_1) + len(pronouns_2) + len(pronouns_3)
+    pronoun_ratio_1 = len(pronouns_1) / num_total_pronoun
+    pronoun_ratio_2 = len(pronouns_2) / num_total_pronoun
+    pronoun_ratio_3 = len(pronouns_3) / num_total_pronoun
+
+    return {
+        "pronoun_ratio_1": pronoun_ratio_1,
+        "pronoun_ratio_2": pronoun_ratio_2,
+        "pronoun_ratio_3": pronoun_ratio_3,
+    }
+    
+def process_genre_pronoun(base_path,lang="en"):
+    results = []
+    total_files = 0
+    success = 0
+
+    for genre in sorted(os.listdir(base_path)):               # sorted = predictable order
+        genre_path = os.path.join(base_path, genre)
+        if not os.path.isdir(genre_path):
+            continue
+
+        print(f"\nProcessing genre: {genre}")
+        files_in_genre = [f for f in os.listdir(genre_path) if f.lower().endswith(".txt")]
+        total_files += len(files_in_genre)
+
+        for filename in files_in_genre:
+            filepath = os.path.join(genre_path, filename)
+
+            # Read file safely
+            text = safe_read_text(filepath)
+            if text is None:
+                print(f"  Failed reading: {filename}")
+                continue
+
+            # Skip extremely short or empty files
+            if len(text.strip()) < 1000:
+                print(f"  Too short, skipping: {filename}")
+                continue
+
+            # Analyze
+            try:
+                metrics = analyze_book_pronoun(text,lang=lang)
+                if metrics:
+                    metrics["book"] = filename
+                    metrics["genre"] = genre
+                    metrics["filepath"] = filepath          # optional: for debugging
+                    results.append(metrics)
+                    success += 1
+                    print(f"  Success: {filename[:50]:50} → {metrics['total_words']:,} words")
+                else:
+                    print(f"  No metrics returned: {filename}")
+            except Exception as e:
+                print(f"  Analysis failed: {filename} | Error: {e}")
+
+    print(f"\nFinished! Successfully processed {success}/{total_files} files.")
+    df = pd.DataFrame(results)
+    df = clean_pronoun(df)
+    return df    
 
 def process_genre_folder(base_path,lang="en"):
     results = []
@@ -261,7 +430,7 @@ def process_genre_folder(base_path,lang="en"):
 
             # Analyze
             try:
-                metrics = analyze_book(text,lang=lang)
+                metrics = analyze_book_pronoun(text,lang=lang)
                 if metrics:
                     metrics["book"] = filename
                     metrics["genre"] = genre
