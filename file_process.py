@@ -59,6 +59,25 @@ CH_PRONOUN_1ST = {
     "我们", "我們", "咱们", "咱們", "俺们", "俺們", "自己"
 }
 
+CH_PRONOUN_1ST_SINGULAR = {
+    "我",      # neutral modern
+    "俺",      # dialectal / colloquial
+    "吾",      # classical / formal
+    "在下",    # humble self-reference
+    "本座",    # elevated / fictional
+    "老子",    # colloquial / emphatic
+    "臣",      # classical (subject to ruler)
+    "朕",      # imperial
+    "孤",      # monarchial
+    "寡人"     # monarchial
+}
+
+CH_PRONOUN_1ST_PLURAL = {
+    "我们", "我們",  # standard plural (simplified / traditional)
+    "咱们", "咱們",  # inclusive plural
+    "俺们", "俺們"   # dialectal plural
+}
+
 CH_PRONOUN_2ND = {
     "你", "妳", "您", "尔", "爾", "汝", "乃",
     "你们", "你們", "诸位", "諸位", "各位"
@@ -72,6 +91,22 @@ CH_PRONOUN_3RD = {
 EN_PRONOUN_1ST = {
     "i", "me", "my", "mine", "myself",
     "we", "us", "our", "ours", "ourselves"
+}
+
+EN_PRONOUN_1ST_SINGULAR = {
+    "i",
+    "me",
+    "my",
+    "mine",
+    "myself"
+}
+
+EN_PRONOUN_1ST_PLURAL = {
+    "we",
+    "us",
+    "our",
+    "ours",
+    "ourselves"
 }
 
 EN_PRONOUN_2ND = {
@@ -146,11 +181,11 @@ def clean_pronoun(df, verbose=True):
     
     # 1. Remove only real garbage (NaN / inf / empty)
     df = df.replace([np.inf, -np.inf], np.nan)
-    df = df.dropna(subset=["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3"])
+    df = df.dropna(subset=["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3","pronoun_ratio_singular","pronoun_ratio_plural"])
     
     
     # 3. VERY LOOSE outlier removal — use 5×IQR or percentile clipping
-    numeric_cols = ["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3"]
+    numeric_cols = ["pronoun_ratio_1", "pronoun_ratio_2","pronoun_ratio_3","pronoun_ratio_singular","pronoun_ratio_plural"]
     
     for col in numeric_cols:
         # For all ratios: winsorize at 1% and 99% (keeps real variation)
@@ -321,6 +356,8 @@ def analyze_book_pronoun(text, lang="en"):
         pronouns_1 = [w for w in words if w in CH_PRONOUN_1ST]
         pronouns_2 = [w for w in words if w in CH_PRONOUN_2ND]
         pronouns_3 = [w for w in words if w in CH_PRONOUN_3RD]
+        pronoun_singular = [w for w in words if w in CH_PRONOUN_1ST_SINGULAR]
+        pronoun_plural = [w for w in words if w in CH_PRONOUN_1ST_PLURAL]
         
     else:
         # ----------------- English processing with spaCy -----------------
@@ -340,16 +377,22 @@ def analyze_book_pronoun(text, lang="en"):
         pronouns_1 = [t for t in real_tokens if t in EN_PRONOUN_1ST]
         pronouns_2 = [t for t in real_tokens if t in EN_PRONOUN_2ND]
         pronouns_3 = [t for t in real_tokens if t in EN_PRONOUN_3RD]
+        pronoun_singular = [t for t in real_tokens if t in EN_PRONOUN_1ST_SINGULAR]
+        pronoun_plural = [t for t in real_tokens if t in EN_PRONOUN_1ST_PLURAL]
     
     num_total_pronoun = len(pronouns_1) + len(pronouns_2) + len(pronouns_3)
     pronoun_ratio_1 = len(pronouns_1) / num_total_pronoun
     pronoun_ratio_2 = len(pronouns_2) / num_total_pronoun
     pronoun_ratio_3 = len(pronouns_3) / num_total_pronoun
+    pronoun_ratio_singular = len(pronoun_singular) / num_total_pronoun
+    pronoun_ratio_plural = len(pronoun_plural) / num_total_pronoun
 
     return {
         "pronoun_ratio_1": pronoun_ratio_1,
         "pronoun_ratio_2": pronoun_ratio_2,
         "pronoun_ratio_3": pronoun_ratio_3,
+        "pronoun_ratio_singular": pronoun_ratio_singular,
+        "pronoun_ratio_plural": pronoun_ratio_plural
     }
     
 def process_genre_pronoun(base_path,lang="en"):
@@ -389,7 +432,7 @@ def process_genre_pronoun(base_path,lang="en"):
                     metrics["filepath"] = filepath          # optional: for debugging
                     results.append(metrics)
                     success += 1
-                    print(f"  Success: {filename[:50]:50} → {metrics['total_words']:,} words")
+                    print(f"  Success: {filename[:50]:50} ")
                 else:
                     print(f"  No metrics returned: {filename}")
             except Exception as e:

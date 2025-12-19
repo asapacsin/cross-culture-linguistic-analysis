@@ -25,9 +25,12 @@ Both Chinese and English show strong pronoun use when discussing school-life top
 
 ### Visualize result
 
-The bar dot plot shows that only the person pronoun exhibits a  high frequency pattern both in Chinese and English school life writing. Which indicates both cultures share the same perception that school life genre strongly links to personal feelings content.
+The bar dot plot shows that only the person pronoun exhibits a  high frequency pattern both in Chinese and English school life writing. Achieveing statistic singnificant. Which indicates both cultures share the same perception that school life genre strongly links to personal feelings content.
 
 <img src="./results/plot.png" width="800">
+
+The detail analyse didn't find and pronoun use pattern that reflect collectivism. And also don't find strong evidence that the single form usage differ from the plural one on first personal pronoun. The investigation reveal the English content shown higher personal pronoun use as previous research find out, and this research also highlightened that the second personal pronoun use achieve significant higher ratio than English content.
+<img src="./results/Pronoun used.png" width="800">
 
 ## File processing use case
 python collect_book.py --path ../data --output filename/file.txt
@@ -37,7 +40,8 @@ python collect_book.py --path ../data --output filename/file.txt
 ```
 data/                  # Raw and processed datasets (corpora, annotations)
 cross-culture-linguistic-analysis/
-├── notebooks              # Jupyter notebooks for exploratory analysis & experiments       
+├── get_pronoun.ipynb      # analyse for personal pronoun component
+├── lingu.ipynb            # main analyse for corpus content 
 │── file_process.py        # (Python scripts/modules)
 ├── results/               # Outputs: figures, tables, model performance
 ├── requirements.txt       # Python dependencies
