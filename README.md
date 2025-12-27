@@ -11,7 +11,7 @@ This repository provides tools, scripts, and datasets for analyzing linguistic d
 in various languages and cultural contexts.
 
 ## Data collections
-The collected data include Chinese and English novel writing in different genres. In total 210 books.
+The collected data include Chinese and English novel writing in different genres. In total, 210 books.
 
 ## Key Features
 
@@ -21,7 +21,7 @@ The collected data include Chinese and English novel writing in different genres
 - Comparative studies (e.g., English vs. Chinese, Spanish vs. Arabic, etc.)
 
 ### Key Finding
-Both Chinese and English show strong pronoun use when discussing school-life topics.
+Both Chinese and English show strong pronoun use when discussing school-life topics (p<0.05 reject non-stronger use hypothesis).
 
 ### Visualize result
 
@@ -29,7 +29,7 @@ The bar dot plot shows that only the person pronoun exhibits a  high frequency p
 
 <img src="./results/plot.png" width="800">
 
-The detail analyse didn't find and pronoun use pattern that reflect collectivism. And also don't find strong evidence that the single form usage differ from the plural one on first personal pronoun. The investigation reveal the English content shown higher personal pronoun use as previous research find out, and this research also highlightened that the second personal pronoun use achieve significant higher ratio than English content.
+The detailed analysis didn't find a pronoun use pattern that reflects collectivism. And also don't find strong evidence that the single form usage differs from the plural one on the first personal pronoun. The investigation reveals that the English content showed higher personal pronoun use, as previous research found out, and this research also highlighted that the second-person pronoun use achieve significant higher ratio than the English content.
 <img src="./results/Pronoun used.png" width="800">
 
 ## File processing use case
@@ -41,7 +41,7 @@ python collect_book.py --path ../data --output filename/file.txt
 data/                  # Raw and processed datasets (corpora, annotations)
 cross-culture-linguistic-analysis/
 ├── get_pronoun.ipynb      # analyse for personal pronoun component
-├── lingu.ipynb            # main analyse for corpus content 
+├── lingu.ipynb            # main analysis for corpus content 
 │── file_process.py        # (Python scripts/modules)
 ├── results/               # Outputs: figures, tables, model performance
 ├── requirements.txt       # Python dependencies
